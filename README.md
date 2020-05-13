@@ -13,7 +13,7 @@
 
 ## experiment.sh
 여러 세팅들에 대한 실험을 sh파일로 한꺼번에 진행 가능하도록 함.
-데이터 전처리 명령과 실험결과 plot 명령도 편집가능
+데이터 전처리 명령과 실험결과 plot 명령도 편집가능.
 
 ## utils.py
 
@@ -22,5 +22,7 @@
 여러 유용한 plot 함수들 모음.
 
 ## data
-* raw
+* raw : dataset 다운로드하는 파일과 다운로드한 raw dataset 저장 디렉토리
+
+여러가지 변형의 dataset 모음.  
 
