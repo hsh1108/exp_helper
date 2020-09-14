@@ -6,7 +6,7 @@ This repository is for efficient experiment.
 ├── arch                (neural network architectures)
 ├── datasets 
 │   └── raws            (download and place raw datasets)
-├── results
+├── results             (directory to save experiment result)
 ├── tools               (supportive tools for experiment)
 │   ├── metric
 │   ├── plot
