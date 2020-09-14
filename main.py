@@ -3,7 +3,7 @@ import time
 import logging
 import torch
 
-import utils
+from tools import utils
 from configs import args_parser
 
 
@@ -24,7 +24,8 @@ def main():
 	logger.addHandler(fh)
 
 	# load dataset
-	if args.dataset ==
+	if args.dataset == 'mnist':
+
 
 	# build global model to train
 	model =
@@ -34,6 +35,7 @@ def main():
 		'state_dict': model.state_dict(),
 		'best_acc_top1': best_acc_top1,
 		'optimizer': optimizer.state_dict(),
+		'loss': loss
 	}, is_best, args.save)
 
 

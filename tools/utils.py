@@ -18,15 +18,13 @@ def create_exp_dir(path, scripts_to_save=None):
       dst_file = os.path.join(path, 'scripts', os.path.basename(script))
       shutil.copyfile(script, dst_file)
 
-# Save current state and best state.
-def save_checkpoint(state, is_best, save):
-  filename = os.path.join(save, 'checkpoint.pth.tar')
+# Save last sate and best state
+def save_checkpoint(state, path, save, is_best):
+  filename = os.path.join(save, path + '_last.pth.tar')
   torch.save(state, filename)
   if is_best:
-    best_filename = os.path.join(save, 'model_best.pth.tar')
+    best_filename = os.path.join(save, path + '_best.pth.tar')
     shutil.copyfile(filename, best_filename)
-
-
 
 
 
