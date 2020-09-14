@@ -6,7 +6,7 @@ CIFAR_100="--n_layers 2 --n_hiddens 100 --data_path data/ --save_path results/ -
 
 
 # Download mnist, cifar10, cifar100
-cd data/
+cd datasets/
 cd raw/
 $MY_PYTHON downloads.py
 cd ..

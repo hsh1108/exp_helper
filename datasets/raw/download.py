@@ -31,9 +31,9 @@ def unpickle(file):
 cifar10_train = unpickle('cifar-10-python/train')
 cifar10_test = unpickle('cifar-10-python/test')
 
-x_tr = torch.from_numpy(cifar10_train[b'data'])
+x_tr = torch.from_numpy(cifar10_train[b'datasets'])
 y_tr = torch.LongTensor(cifar10_train[b'fine_labels'])
-x_te = torch.from_numpy(cifar10_test[b'data'])
+x_te = torch.from_numpy(cifar10_test[b'datasets'])
 y_te = torch.LongTensor(cifar10_test[b'fine_labels'])
 
 torch.save((x_tr, y_tr, x_te, y_te), 'cifar10.pt')
@@ -42,9 +42,9 @@ torch.save((x_tr, y_tr, x_te, y_te), 'cifar10.pt')
 cifar100_train = unpickle('cifar-100-python/train')
 cifar100_test = unpickle('cifar-100-python/test')
 
-x_tr = torch.from_numpy(cifar100_train[b'data'])
+x_tr = torch.from_numpy(cifar100_train[b'datasets'])
 y_tr = torch.LongTensor(cifar100_train[b'fine_labels'])
-x_te = torch.from_numpy(cifar100_test[b'data'])
+x_te = torch.from_numpy(cifar100_test[b'datasets'])
 y_te = torch.LongTensor(cifar100_test[b'fine_labels'])
 
 torch.save((x_tr, y_tr, x_te, y_te), 'cifar100.pt')
