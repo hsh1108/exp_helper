@@ -4,6 +4,8 @@ This repository is for efficient pytorch-experiment.
 ## Contents and descriptions
 ```
 ├── arch                (neural network architectures)
+│   ├── mlp.py          (mlp)
+│   └── resnet.py       (resnet)
 ├── datasets 
 │   └── raws            (download and place raw datasets)
 ├── results             (directory to save experiment result)
