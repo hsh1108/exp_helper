@@ -1,5 +1,5 @@
 # Project
-This repository is for efficient experiment.
+This repository is for efficient pytorch-experiment.
 
 ## Contents and descriptions
 ```
