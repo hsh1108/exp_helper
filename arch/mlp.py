@@ -1,7 +1,9 @@
 import math
 import torch.nn as nn
 
-# MLP softmax Network
+"""
+MLP softmax Network
+"""
 
 def Xavier(m):
     if m.__class__.__name__ == 'Linear':

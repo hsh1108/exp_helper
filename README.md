@@ -11,6 +11,9 @@ This repository is for efficient pytorch-experiment.
 │   └── raws            (download and place raw datasets)
 ├── results             (directory to save experiment result)
 ├── tools               (supportive tools for experiment)
+│   ├── image           (tools to save image)
+│   │   ├── samples     (sample images to test)
+│   │   └── tv.py       (torchvision)
 │   ├── metric
 │   ├── plot
 │   └── utils.py

@@ -9,7 +9,7 @@ parser.add_argument('--i', default='raw/cifar10.pt', help='input directory')
 parser.add_argument('--o', default='cifar10.pt', help='output file')
 parser.add_argument('--n_tasks', default=5, type=int, help='number of tasks')
 parser.add_argument('--seed', default=0, type=int, help='random seed')
-parser.add_argument('--p', default=0, type=float, help='percentage of samples of a given task in its turn ')
+parser.add_argument('--p', default=0, type=float, help='percentage of image of a given task in its turn ')
 args = parser.parse_args()
 assert(args.p<=1 and args.p>0)
 torch.manual_seed(args.seed)
@@ -47,7 +47,7 @@ for t in tasks_tr_inds.keys():
     print("blurred inds len",len(blurred_inds))
 
 blurred_inds=torch.tensor( blurred_inds)
-blurred_inds=blurred_inds[torch.randperm(blurred_inds.size(0))]#shuffel the samples
+blurred_inds=blurred_inds[torch.randperm(blurred_inds.size(0))]#shuffel the image
 per_task_blurred=int(blurred_inds.size(0)/args.n_tasks)
 for t in range(args.n_tasks):
     c1 = t * cpt

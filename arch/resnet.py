@@ -2,8 +2,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# Resnet
-
+"""
+Resnet
+"""
 
 
 def ResNet18(nclasses, nf=512):

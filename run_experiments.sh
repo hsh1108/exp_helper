@@ -31,14 +31,14 @@ $MY_PYTHON cifar100.py \
 
 cd ..
 
-# experiment example 1
+# experiment example test
 $MY_PYTHON main.py $MNIST --model single --lr 0.003
 
 # experiment example 2
 $MY_PYTHON main.py $CIFAR_100 --model single --lr 0.03
 
 # You can add more experiments below ...
-$MY_PYTHON main.py $CIFAR_100 --model single --lr 1.0
+$MY_PYTHON main.py $CIFAR_100 --model single --lr test.0
 
 # plot results
 cd results/
