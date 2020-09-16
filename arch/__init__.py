@@ -1,4 +1,5 @@
-
+from .mlp import *
+from .resnet import *
 
 """
 Networks list
@@ -7,6 +8,3 @@ Networks list
 
 """
 
-
-from .mlp import *
-from .resnet import *
