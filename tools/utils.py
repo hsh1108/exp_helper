@@ -27,6 +27,12 @@ def save_checkpoint(state, path, save, is_best):
     shutil.copyfile(filename, best_filename)
 
 
+# To make directories
+def mkdir(paths):
+    for path in paths:
+        if not os.path.isdir(path):
+            os.makedirs(path)
+
 
 ######################################################################################################################
 class AvgrageMeter(object):

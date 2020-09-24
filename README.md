@@ -21,7 +21,6 @@ This repository is for efficient pytorch-experiment.
 ├── configs.py              separately configure arg_parser func for easy checking.
 ├── main.py                 main code.
 ├── README.md               this file.
-├── run_experiments.sh      possible to conduct several experiments at once.
-└── test.py                 inference code.
+└── run_experiments.sh      possible to conduct several experiments at once.
 ```
 
