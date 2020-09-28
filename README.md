@@ -15,7 +15,7 @@ This repository is for efficient pytorch-experiment.
 │   │   ├── samples         sample images to test.
 │   │   │   └── test        test folder.
 │   │   └── tv.py           torchvision.
-│   ├── metric
+│   ├── reliability.py      tools for calibration measure & plot.
 │   ├── plot
 │   └── utils.py
 ├── configs.py              separately configure arg_parser func for easy checking.
